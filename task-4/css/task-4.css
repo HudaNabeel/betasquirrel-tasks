@@ -3,109 +3,45 @@ body {
   margin: 0 auto;
 }
 #navbar {
-    background-color: #625c5c;
-    height: 80px;display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ececec;
+  background-color: #625c5c;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 #logo-container {
-    width: 300px;
-    float: left;
-    display: flex;
-    justify-content: flex-start;
-    padding: 15px;
+  width: 200px;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
 }
 #logo-container img {
-    height: 30px;
-    margin-right: 15px;
+  height: 60px;
+  margin-right: 20px;
 }
 #logo-container h2 {
-    display: inline;block;
-    color: white;
+  display: inline-block;
+  color: white;
 }
 #profile-container {
-    width: 250px;
-    float: right;
+  width: auto;
+  float: right;
 }
 #profile-container > img {
-    height: 60px;
-    border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 .main {
-    height: calc( 100vh - 81px ); 
-    position: relative;
+  height: calc(100vh - 81px);
 }
 #sidebar {
-    background-color: #625c5c;
-    height: 100%;
-    width: 150px;
-    float: left;
-    position: absolute;
-}
-#container > h2 {
-    color: #555;
-    margin: 0 0 15 0;
-    text-decoration: underline;
-}
-#container {
-    padding: 15px;
-    float: right;
-    width: calc(100vw - 180px);
-}
-.green-bg {
-    background-color: #06ce83;
-
-}
-.purple-bg {
-    background-color: #a25aff;
-}
-.red-bg {
-    background-color: #f24e1d;
-}
-.cyan-bg {
-    background-color: #1cbcfd;
-}
-#tile-container,
-circle-container {
-    display: flex;
-}
-.tile,
-.circle {
-    height: 200px;
-}
-.tile h2,
-.tile h3 {
-    color: white;
-    align-items: center;
-}
-.tile,
-.chart {
-   width: calc((100% / 4)); 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-.circle {
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-left: 20px;
-}
-.chart {
-    height: calc((100vw - 180px) / 4);
-}
-#tile-container > div,
-#circle-container > div {
-    margin-bottom: 15px;
-    margin-right: 15px;
-    position: relative;
-}
-#tile-container > div:last-child,
-#circle-container > div:last-child {
-    margin-right: 0;
+  background-color: #625c5c;
+  height: calc(100vh - 71px);
+  width: 200px;
+  float: left;
+  margin-bottom: 20px;
 }

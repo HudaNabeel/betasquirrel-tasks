@@ -45,6 +45,13 @@ body {
   background-color: #86df7e;
   width: 250px;
   padding: 15px;
+  float: left;
+}
+.one {
+  float: left;
+}
+.two {
+  float: right;
 }
 #secondary-container {
   background-color: #b94141;
@@ -56,4 +63,32 @@ body {
   background-color: #dadada;
   border: 3px solid #2ca122;
   height: 100%;
+  justify-content: center;
+}
+@media only screen and (max-width: 750px) {
+  a {
+    display: none;
+  }
+  #navbar {
+    width: 100%;
+  }
+  #main-container {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .one {
+    height: auto;
+    width: auto;
+    margin-bottom: 5px;
+  }
+  .two {
+    height: auto;
+    width: auto;
+    margin-bottom: 5px;
+  }
+  #second-container {
+    width: 100vw;
+    padding: 10px;
+  }
 }
