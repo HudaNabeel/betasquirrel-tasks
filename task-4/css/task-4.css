@@ -40,8 +40,173 @@ body {
 }
 #sidebar {
   background-color: #625c5c;
-  height: calc(100vh - 71px);
-  width: 200px;
+  height: 100%;
+  width: 150px;
   float: left;
-  margin-bottom: 20px;
+}
+#container > h2 {
+  color: #555;
+  margin: 0 0 15px 0;
+  text-decoration: underline;
+}
+#container {
+  padding: 15px;
+  float: left;
+  width: calc(100vw - 200px);
+}
+.green-bg {
+  background-color: #06ce83;
+}
+.purple-bg {
+  background-color: #a25aff;
+}
+.red-bg {
+  background-color: #f24e1d;
+}
+.cyan-bg {
+  background-color: #1cbcfd;
+}
+#tile-container,
+#circle-container {
+  display: flex;
+}
+#tile-container {
+  margin-bottom: 15px;
+}
+.tile {
+  height: 200px;
+  width: calc((100%) / 4);
+}
+.tile,
+.circle,
+.chart {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tile h2,
+.tile h3 {
+  color: white;
+}
+.circle,
+.chart {
+  height: calc((100vw - 200px) / 4);
+  width: calc((100%) / 4);
+}
+.circle {
+  border-radius: 50%;
+}
+#tile-container > div,
+#circle-container > div {
+  margin-right: 20px;
+}
+#tile-container > div:last-child,
+#circle-container > div:last-child {
+  margin-right: 0;
+}
+.inner-one {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.inner-one h2,
+.inner-four h2 {
+  color: #fff;
+}
+.inner-two {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.inner-one h2 {
+  color: #555;
+}
+.inner-three {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7261;
+  overflow: hidden;
+}
+.inner-four {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 6px;
+}
+.bar {
+  width: 15px;
+  position: absolute;
+}
+.chart {
+  position: relative;
+  display: block;
+}
+.chart div {
+  bottom: 0;
+}
+.one {
+  left: 0;
+  height: calc(100% - 30px);
+}
+.two {
+  left: 40px;
+  height: calc(100% - 150px);
+}
+.three {
+  left: 90px;
+  height: calc(100% - 120px);
+}
+.four {
+  left: 135px;
+  height: calc(100% - 200px);
+}
+.five {
+  left: 180px;
+  height: calc(100% - 40px);
+  background-color: #5e5c5d;
+}
+.six {
+  left: 225px;
+  height: calc(100% - 280px);
+  background-color: #ff7261;
+}
+.line {
+  width: 100%;
+  height: 15px;
+  background-color: #625b5b;
+  position: absolute;
+}
+#sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 30px 30px 30px;
+}
+#sidebar nav a {
+  color: white;
+  padding: 5px;
+}
+#sidebar nav a:first-child {
+  padding-top: 0;
+}
+#sidebar nav a.active {
+  color: #0ece83;
+  text-decoration: none;
 }
