@@ -4,6 +4,14 @@ Assignments from betasquirrel
 
 README.md
 
+## Requirments
+
+| Requirments                              | Output                                         |
+| ---------------------------------------- | ---------------------------------------------- |
+| ![task 1](images/requirments/task-1.png) | ![task 1](images/output/task-1-requirment.png) |
+| ![task 2](images/requirments/task-2.png) | ![task 2](images/output/task-2-requirment.png) |
+| ![task 4](images/requirments/task-4.jpg) | ![task 4](images/output/task-4-requirment.jpg) |
+
 #### task-3
 
 Read the below pages and attend the tests.
@@ -53,3 +61,18 @@ Read the below pages and attend the tests.
 - [input types](https://www.w3schools.com/html/html_form_input_types.asp)
 - [input atributes](https://www.w3schools.com/html/html_form_attributes.asp)
 - [input form atributes](https://www.w3schools.com/html/html_form_attributes_form.asp)
+
+## Linux Commands
+
+- `cd` - Change current directory. Ex: `cd Desktop`, `cd ..`
+- `ls` - List contents of a directory. Ex: `ls -a` lists hidden files as well.
+- `pwd` - Display current working directory path
+- `cat` - Display contens of a file. Ex: `cat README.md`
+
+## Git Commands
+
+1. `git config` Config git user. Ex: `git config --global user.name "hudanabeel" `, `git config user.email "huda45852@gmail.com"`
+2. `git clone` Clone a remote git repo to your local. Ex: `git clone https://github.com/HudaNabeel/betasquirrel-tasks.git`, `git clone https://github.com/HudaNabeel/betasquirrel-tasks.git new-folder`
+3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md`
+4. `git commit` Commit chnges to git. Ex: `git commit -m "Initial commit"
+5. `git push` Push your local commits to remote repo. Ex:`git push origin main`
