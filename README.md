@@ -82,6 +82,6 @@ Read the below pages and attend the tests.
 7. `git pull` The git pull command first runs `git fetch` which downloads the contens from the specified remote repository and then immeadiately updates the local repo to match the content.
 8. `git diff` Diffing is a function that takes two input datasets and outputs the changes between them.The git diff command is a multi-use Git command which,when executed,run adiff function on Git data sources.These data sources can be commits,branches,files,and more.The git diff command is often used along with the git status and git log commands to analyze the current state of our Git repository.We use `git log` to get the details of commit IDs.
 
-## MY WEBSITE LINK
+## my website link
 
 https://hudanabeel.github.io/betasquirrel-tasks/
