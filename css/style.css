@@ -1,5 +1,5 @@
 body {
-  background-color: blue;
+  background-color: violet;
   margin: 0;
 }
 #main {
@@ -19,7 +19,7 @@ body {
   height: 80px;
   display: flex;
   float: left;
-  background-color: aqua;
+  background-color: peru;
   margin: 10px;
   padding: 10px;
   text-align: center;

@@ -85,3 +85,19 @@ Read the below pages and attend the tests.
 ## my website link
 
 https://hudanabeel.github.io/betasquirrel-tasks/
+
+# Responsive Design Dimensions
+
+- xs ( <576 )
+- sm ( >=576 )
+- md ( >=768 )
+- lg ( >=992 )
+- xl ( >=1200)
+- xxl ( >=1400)
+
+- mobile `@media only screen and (max-width: 767px) {}`
+- tablet `@media only screen and (max-width: 991px) and (min-width: 768px) {}`
+
+# Bootstrap link
+
+https://getbootstrap.com/
