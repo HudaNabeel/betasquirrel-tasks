@@ -101,3 +101,7 @@ https://hudanabeel.github.io/betasquirrel-tasks/
 # Bootstrap link
 
 https://getbootstrap.com/
+
+# Figma web link
+
+https://www.figma.com/file/FmUo2ACw5tpl5uSKr5L1WW/Untitled?node-id=5%3A2&t=gM2rexpZUPYrJ6v4-1
