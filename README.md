@@ -105,3 +105,5 @@ https://getbootstrap.com/
 # Figma web link
 
 https://www.figma.com/file/FmUo2ACw5tpl5uSKr5L1WW/Untitled?node-id=5%3A2&t=gM2rexpZUPYrJ6v4-1
+
+https://www.figma.com/file/ZvguYIB8x5tn5xrecTubvx/Untitled?node-id=1%3A2&t=hDbBZO916l1sVvFB-1
