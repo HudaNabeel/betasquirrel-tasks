@@ -40,9 +40,12 @@ body {
   height: calc(100vh - 82px);
   width: calc(100vw);
 }
+div {
+  display: block;
+}
 #sidebar {
   background-color: white;
-  width: 300px;
+  width: 200px;
   height: 100%;
   float: left;
   border-right: 2px solid #555;
@@ -52,14 +55,21 @@ body {
   display: flex;
   padding: 20px 20px 20px 20px;
   flex-direction: column;
+  text-decoration: none;
+  color: #555;
 }
 
 #sidebar nav a:first-child {
   padding-top: 0;
 }
+a:-webkit-any-link {
+  color: #555;
+  cursor: pointer;
+  text-decoration: none;
+}
 .container {
+  width: 100vw;
   height: calc(100vh- 82px);
-
   float: left;
   display: inline;
   margin-top: 10px;
@@ -69,8 +79,13 @@ body {
   align-items: center;
 }
 h2 {
-  text-decoration: none;
-  margin-left: 15%;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 .button {
   background-color: #4caf50;
@@ -82,26 +97,36 @@ h2 {
   margin: 4px 2px;
   color: white;
   text-decoration: none;
+  float: right;
 }
 table,
 td,
 th {
   border: 1px solid #555;
 }
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
 table {
   margin-top: auto;
   width: 100%;
   border: 1px solid #555;
-  border-collapse: collapse;
   text-align: center;
-  float: left;
   margin-inline: 60px;
+  border-collapse: collapse;
+  margin-left: 20px;
 }
 .flex {
   display: flex;
   align-items: center;
 }
-nav img {
+nav img,
+nav i {
   height: 30px;
   margin-right: 20px;
+}
+nav i {
+  vertical-align: middle;
+  line-height: 28px !important;
 }
