@@ -19,12 +19,13 @@ body {
 }
 #logo-container img {
   height: 60px;
-  padding: 0 15px 0 15px;
+  margin-right: 20px;
 }
 #logo-container h2 {
   display: inline-block;
   color: #555;
-  margin-left: 15px;
+  text-decoration: none;
+  padding: 10px;
 }
 #profile-container {
   width: auto;
@@ -37,15 +38,11 @@ body {
   margin-right: 20px;
 }
 .main {
-  height: calc(100vh - 82px);
-  width: calc(100vw);
-}
-div {
-  display: block;
+  height: calc(100vh - 80px);
 }
 #sidebar {
   background-color: white;
-  width: 200px;
+  width: 150px;
   height: 100%;
   float: left;
   border-right: 2px solid #555;
@@ -53,12 +50,15 @@ div {
 }
 #sidebar nav {
   display: flex;
-  padding: 20px 20px 20px 20px;
   flex-direction: column;
-  text-decoration: none;
   color: #555;
+  padding: 15px 30px 30px 30px;
 }
-
+sidebar nav a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
 #sidebar nav a:first-child {
   padding-top: 0;
 }
@@ -68,36 +68,40 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 .container {
-  width: 100vw;
-  height: calc(100vh- 82px);
+  width: 900px;
   float: left;
   display: inline;
-  margin-top: 10px;
   display: flex;
   margin-left: 30px;
   justify-content: space-between;
   align-items: center;
 }
 h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 10px;
 }
 .button {
   background-color: #4caf50;
+  height: 40px;
+  width: 100px;
+  margin-right: 10px;
   border: none;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  color: white;
   text-decoration: none;
-  float: right;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.icon {
+  height: auto;
+  width: calc(100% - 200px);
+  float: left;
+  margin-left: 25px;
+}
+.table-container {
+  height: calc(100% - 900px);
+  width: calc(100% - 200px);
+  float: left;
+  margin-top: 10px;
 }
 table,
 td,
@@ -113,9 +117,8 @@ table {
   width: 100%;
   border: 1px solid #555;
   text-align: center;
-  margin-inline: 60px;
   border-collapse: collapse;
-  margin-left: 20px;
+  float: left;
 }
 .flex {
   display: flex;
