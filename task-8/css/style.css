@@ -1,0 +1,9 @@
+body {
+  color: white;
+  margin: 0;
+}
+.container {
+  width: 550px;
+  height: 900px;
+  color: darkslategrey;
+}
