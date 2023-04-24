@@ -12,7 +12,7 @@ README.md
 | ![task 2](images/requirments/task-2.png)         | ![task 2](images/output/task-2-requirment.png) |
 | ![task 4](images/requirments/task-4.jpg)         | ![task 4](images/output/task-4-requirment.jpg) |
 | ![task 5](images/requirments/task-5%20form.jpg)  | ![task 5](images/output/task-5%20form.png)     |
-| ![task 5](images/requirments/task-5%20table.jpg) | ![task 5](images)/output/task-5                |
+| ![task 5](images/requirments/task-5%20table.jpg) | ![task 5](images/output/task-5%20table.png)    |
 
 ## Importent Notes
 
