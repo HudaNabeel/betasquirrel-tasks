@@ -77,6 +77,46 @@ read the below pages and attend the test
 - [table style](https://www.w3schools.com/css/css_table_style.asp)
 - [table responsive](https://www.w3schools.com/css/css_table_responsive.asp)
 
+## JavaScript
+
+- [JS Home](https://www.w3schools.com/js/default.asp).
+- [JS introduction](https://www.w3schools.com/js/js_intro.asp).
+- [JS where to](https://www.w3schools.com/js/js_whereto.asp).
+- [JS output](https://www.w3schools.com/js/js_output.asp).
+- [JS statements](https://www.w3schools.com/js/js_statements.asp).
+- [JS syntax](https://www.w3schools.com/js/js_syntax.asp).
+- [JS comments](https://www.w3schools.com/js/js_comments.asp).
+- [JS variables](https://www.w3schools.com/js/js_variables.asp).
+- [JS let](https://www.w3schools.com/js/js_let.asp).
+- [JS const](https://www.w3schools.com/js/js_const.asp).
+- [JS operators](https://www.w3schools.com/js/js_operators.asp).
+- [JS arithametic](https://www.w3schools.com/js/js_arithmetic.asp).
+- [JS assignment](https://www.w3schools.com/js/js_assignment.asp).
+- [JS data types](https://www.w3schools.com/js/js_datatypes.asp).
+- [JS functions](https://www.w3schools.com/js/js_functions.asp).
+
+## PHP
+
+- [PHP home](https://www.w3schools.com/php/default.asp).
+- [PHP intro](https://www.w3schools.com/php/php_intro.asp).
+- [PHP install](https://www.w3schools.com/php/php_install.asp)
+- [PHP syntax](https://www.w3schools.com/php/php_syntax.asp)
+- [PHP comments](https://www.w3schools.com/php/php_comments.asp)
+- [PHP variables](https://www.w3schools.com/php/php_variables.asp)
+- [PHP echo/print](https://www.w3schools.com/php/php_echo_print.asp)
+- [PHP datatypes](https://www.w3schools.com/php/php_datatypes.asp)
+- [PHP strings](https://www.w3schools.com/php/php_string.asp)
+- [PHP nubers](https://www.w3schools.com/php/php_numbers.asp)
+- [PHP math](https://www.w3schools.com/php/php_math.asp)
+- [PHP constants](https://www.w3schools.com/php/php_constants.asp)
+- [PHP operators](https://www.w3schools.com/php/php_operators.asp)
+- [PHP if....else....elseif](https://www.w3schools.com/php/php_if_else.asp)
+- [PHP switch](https://www.w3schools.com/php/php_switch.asp)
+- [PHP loops](https://www.w3schools.com/php/php_looping.asp)
+- [PHP functions](https://www.w3schools.com/php/php_functions.asp)
+- [PHP arrays](https://www.w3schools.com/php/php_arrays.asp)
+- [PHP superglobals](https://www.w3schools.com/php/php_superglobals.asp)
+
 ## Linux Commands
 
 - `cd` - Change current directory. Ex: `cd Desktop`, `cd ..`
@@ -121,7 +161,6 @@ https://www.figma.com/file/FmUo2ACw5tpl5uSKr5L1WW/Untitled?node-id=5%3A2&t=gM2re
 
 https://www.figma.com/file/ZvguYIB8x5tn5xrecTubvx/Untitled?node-id=1%3A2&t=hDbBZO916l1sVvFB-1
 
-# Input types
+# Appache link
 
--
-- text ex:`<input type="text"
+https://www.apachefriends.org/download.html
