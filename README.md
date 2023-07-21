@@ -4,9 +4,9 @@ Assignments from betasquirrel
 
 README.md
 
-## Requirments
+## Requirements
 
-| Requirments                                      | Output                                         |
+| Requirements                                     | Output                                         |
 | ------------------------------------------------ | ---------------------------------------------- |
 | ![task 1](images/requirments/task-1.png)         | ![task 1](images/output/task-1-requirment.png) |
 | ![task 2](images/requirments/task-2.png)         | ![task 2](images/output/task-2-requirment.png) |
@@ -14,7 +14,7 @@ README.md
 | ![task 5](images/requirments/task-5%20form.jpg)  | ![task 5](images/output/task-5%20form.png)     |
 | ![task 5](images/requirments/task-5%20table.jpg) | ![task 5](images/output/task-5%20table.png)    |
 
-## Importent Notes
+## Important Notes
 
 ## task-3
 
@@ -22,9 +22,9 @@ Read the below pages and attend the tests.
 
 - [HTML](https://www.w3schools.com/html/html_intro.asp)
 - [elements](https://www.w3schools.com/html/html_elements.asp)
-- [atributes](https://www.w3schools.com/html/html_attributes.asp)
+- [attributes](https://www.w3schools.com/html/html_attributes.asp)
 - [headings](https://www.w3schools.com/html/html_headings.asp)
-- [paragraps](https://www.w3schools.com/html/html_paragraphs.asp)
+- [paragraph](https://www.w3schools.com/html/html_paragraphs.asp)
 - [styles](https://www.w3schools.com/html/html_styles.asp)
 - [formatting](https://www.w3schools.com/html/html_formatting.asp)
 - [quotations](https://www.w3schools.com/html/html_quotation_elements.asp)
@@ -52,7 +52,7 @@ Read the below pages and attend the tests.
 - [table borders](https://www.w3schools.com/html/html_table_borders.asp)
 - [table sizes](https://www.w3schools.com/html/html_table_sizes.asp)
 - [table headers](https://www.w3schools.com/html/html_table_headers.asp)
-- [paddind & spacing](https://www.w3schools.com/html/html_table_padding_spacing.asp)
+- [padding & spacing](https://www.w3schools.com/html/html_table_padding_spacing.asp)
 - [colspan & rowspan](https://www.w3schools.com/html/html_table_colspan_rowspan.asp)
 - [table styling](https://www.w3schools.com/html/html_table_styling.asp)
 - [table colgroup](https://www.w3schools.com/html/html_table_colgroup.asp)
@@ -63,8 +63,8 @@ Read the below pages and attend the tests.
 - [form attributes](https://www.w3schools.com/html/html_forms_attributes.asp)
 - [form elements](https://www.w3schools.com/html/html_form_elements.asp)
 - [input types](https://www.w3schools.com/html/html_form_input_types.asp)
-- [input atributes](https://www.w3schools.com/html/html_form_attributes.asp)
-- [input form atributes](https://www.w3schools.com/html/html_form_attributes_form.asp)
+- [input attributes](https://www.w3schools.com/html/html_form_attributes.asp)
+- [input form attributes](https://www.w3schools.com/html/html_form_attributes_form.asp)
 
 # task-5 Css Tables
 
@@ -89,7 +89,7 @@ read the below pages and attend the test
 - [JS let](https://www.w3schools.com/js/js_let.asp).
 - [JS const](https://www.w3schools.com/js/js_const.asp).
 - [JS operators](https://www.w3schools.com/js/js_operators.asp).
-- [JS arithametic](https://www.w3schools.com/js/js_arithmetic.asp).
+- [JS arithmetic](https://www.w3schools.com/js/js_arithmetic.asp).
 - [JS assignment](https://www.w3schools.com/js/js_assignment.asp).
 - [JS data types](https://www.w3schools.com/js/js_datatypes.asp).
 - [JS functions](https://www.w3schools.com/js/js_functions.asp).
@@ -103,9 +103,9 @@ read the below pages and attend the test
 - [PHP comments](https://www.w3schools.com/php/php_comments.asp)
 - [PHP variables](https://www.w3schools.com/php/php_variables.asp)
 - [PHP echo/print](https://www.w3schools.com/php/php_echo_print.asp)
-- [PHP datatypes](https://www.w3schools.com/php/php_datatypes.asp)
+- [PHP datatype](https://www.w3schools.com/php/php_datatypes.asp)
 - [PHP strings](https://www.w3schools.com/php/php_string.asp)
-- [PHP nubers](https://www.w3schools.com/php/php_numbers.asp)
+- [PHP numbers](https://www.w3schools.com/php/php_numbers.asp)
 - [PHP math](https://www.w3schools.com/php/php_math.asp)
 - [PHP constants](https://www.w3schools.com/php/php_constants.asp)
 - [PHP operators](https://www.w3schools.com/php/php_operators.asp)
