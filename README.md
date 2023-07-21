@@ -121,18 +121,18 @@ read the below pages and attend the test
 - `cd` - Change current directory. Ex: `cd Desktop`, `cd ..`
 - `ls` - List contents of a directory. Ex: `ls -a` lists hidden files as well.
 - `pwd` - Display current working directory path
-- `cat` - Display contens of a file. Ex: `cat README.md`
+- `cat` - Display contents of a file. Ex: `cat README.md`
 
 ## Git Commands
 
 1. `git config` Config git user. Ex: `git config --global user.name "hudanabeel" `, `git config user.email "huda45852@gmail.com"`
 2. `git clone` Clone a remote git repo to your local. Ex: `git clone https://github.com/HudaNabeel/betasquirrel-tasks.git`, `git clone https://github.com/HudaNabeel/betasquirrel-tasks.git new-folder`
 3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md`
-4. `git commit` Commit chnges to git. Ex: `git commit -m "Initial commit"
+4. `git commit` Commit changes to git. Ex: `git commit -m "Initial commit"
 5. `git push` Push your local commits to remote repo. Ex:`git push origin main`
 6. `git stash` This command can be used when we want to save our work without staging or committing the code to our Git repository and want to switch between branches.
-7. `git pull` The git pull command first runs `git fetch` which downloads the contens from the specified remote repository and then immeadiately updates the local repo to match the content.
-8. `git diff` Diffing is a function that takes two input datasets and outputs the changes between them.The git diff command is a multi-use Git command which,when executed,run adiff function on Git data sources.These data sources can be commits,branches,files,and more.The git diff command is often used along with the git status and git log commands to analyze the current state of our Git repository.We use `git log` to get the details of commit IDs.
+7. `git pull` The git pull command first runs `git fetch` which downloads the contents from the specified remote repository and then immediately updates the local repo to match the content.
+8. `git diff` Diffing is a function that takes two input datasets and outputs the changes between them.The git diff command is a multi-use Git command which,when executed,run diff function on Git data sources.These data sources can be commits,branches,files,and more.The git diff command is often used along with the git status and git log commands to analyze the current state of our Git repository.We use `git log` to get the details of commit IDs.
 
 ## my website link
 
@@ -160,6 +160,12 @@ https://www.figma.com/file/FmUo2ACw5tpl5uSKr5L1WW/Untitled?node-id=5%3A2&t=gM2re
 
 https://www.figma.com/file/ZvguYIB8x5tn5xrecTubvx/Untitled?node-id=1%3A2&t=hDbBZO916l1sVvFB-1
 
-# Appache link
+# Apache link
 
 https://www.apachefriends.org/download.html
+
+# ChatGPT link
+
+If any problem , sure ChatGPT contact and it will solve the problem
+
+https://chat.openai.com
