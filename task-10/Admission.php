@@ -50,7 +50,6 @@ require('head.php');
                 $email = '';
                 $branch = '';
                 $address = '';
-                $additionalSubjects = [];
                 $hostelFacility = 0;
 
 
@@ -70,7 +69,6 @@ require('head.php');
                     $email = sanitizeField($_POST['email']);
                     $branch = sanitizeField($_POST['branch']);
                     $address = sanitizeField($_POST['address']);
-                    $additionalSubjects = isset($_POST['additional_subjects']) ? $_POST['additional_subjects'] : [];
                     $hostelFacility = sanitizeField($_POST['hostel_facility']);
 
                     // Validate data
@@ -90,11 +88,11 @@ require('head.php');
                     }
 
                     if (empty($email)) {
-                        $emilError = 'EMail Address is mandatory!';
+                        $emailError = 'Email Address is mandatory!';
                         $isError = true;
                     }
 
-                    if (!filter_var($emil, FILTER_VALIDATE_EMAIL)) {
+                    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                         $emailError = "invalid email format";
                         $isError = true;
                     }
@@ -110,7 +108,7 @@ require('head.php');
                     }
                     // Insert to database for validation
                     if (!$isError) {
-                        $sql = "INSERT INTO `students` (`first_name`, `last_name`, `mobile`, `email`, `branch`, `is_hostel_opted`, `additional_subjects`, `address`,) VALUES ('" . $firstName . "', '" . $lastName . "', '" . $mobile . "', '" . $email . "', '" . $branch . "', '" . $hostelFacility . "', '" . json_encode($additionalSubjects) . "', '" . $address . "')";
+                        $sql = "INSERT INTO students ( `first_name`, `last_name`, `mobile`,`email`, `branch`,   `is_hostel_opted`, `additional_subjects `, `address`, ) VALUES ('" . $firstName . "', '" . $lastName . "', '" . $mobile . "', '" . $email . "', '" . $branch . "', '" . $hostelFacility . "',  '" . $address . "')";
                         // Redirect to listing page after successful creation
                         if ($conn->query($sql) === TRUE) {
                             header("Location: index.php");
@@ -125,7 +123,7 @@ require('head.php');
                 function sanitizeField($field)
                 {
                     $field = trim($field);
-                    $field = stripcslashes($$field);
+                    $field = stripcslashes($field);
                     $field = htmlspecialchars($field);
                     return $field;
                 }
@@ -223,32 +221,7 @@ require('head.php');
                                 </label>
                             </div>
                         </div>
-                        <div class="row-container">
-                            <!-- Additional Subjects -->
-                            <div class="input-container">
-                                <label>Choose Additional Subjects:</label>
-                                <label class="wrapper check-wrapper">
-                                    <input type="checkbox" name="additional_subjects[]" value="Cyber Security" <?php echo in_array('Cyber Security', $additionalSubjects) ? 'checked' : ''; ?> />
-                                    Cyber Security
-                                </label>
-                                <label class="wrapper check-wrapper">
-                                    <input type="checkbox" name="additional_subjects[]" value="Artificial Intelligence" <?php echo in_array('Artificial Intelligence', $additionalSubjects) ? 'checked' : ''; ?> />
-                                    Artificial Intelligence
-                                </label>
-                                <label class="wrapper check-wrapper">
-                                    <input type="checkbox" name="additional_subjects[]" value="Blockchain" <?php echo in_array('Blockchain', $additionalSubjects) ? 'checked' : ''; ?> />
-                                    Blockchain
-                                </label>
-                                <label class="wrapper check-wrapper">
-                                    <input type="checkbox" name="additional_subjects[]" value="IoT" <?php echo in_array('IoT', $additionalSubjects) ? 'checked' : ''; ?> />
-                                    IoT
-                                </label>
-                                <label class="wrapper check-wrapper">
-                                    <input type="checkbox" name="additional_subjects[]" value="Robotics" <?php echo in_array('Robotics', $additionalSubjects) ? 'checked' : ''; ?> />
-                                    Robotics
-                                </label>
-                            </div>
-                        </div>
+
                         <div class="row-container">
                             <!-- Address -->
                             <div class="input-container">

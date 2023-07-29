@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task 9</title>
+    <title>task 10</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -88,7 +88,7 @@ if ($conn->connect_error) {
                         $email = $row['email'];
                         $branch = $row['branch'];
                         $address = $row['address'];
-                        $additionalSubjects = json_decode($row['additional_subjects']);
+
                         $hostelFacility = $row['is_hostel_opted'];
                     }
 
@@ -106,7 +106,7 @@ if ($conn->connect_error) {
                         $email = sanitizeField($_POST['email']);
                         $branch = sanitizeField($_POST['branch']);
                         $address = sanitizeField($_POST['address']);
-                        $additionalSubjects = isset($_POST['additional_subjects']) ? $_POST['additional_subjects'] : [];
+
                         $hostelFacility = sanitizeField($_POST['hostel_facility']);
 
                         if (empty($firstName)) {
@@ -145,7 +145,7 @@ if ($conn->connect_error) {
                         }
 
                         if (!$isError) {
-                            $sql = "UPDATE `students` SET `first_name` = '" . $firstName . "', `last_name` = '" . $lastName . "', `mobile` = '" . $mobile . "', `email` = '" . $email . "', `branch` = '" . $branch . "', `is_hostel_opted` = '" . $hostelFacility . "', `address` = '" . $address . "', `additional_subjects` = '" . json_encode($additionalSubjects) . "' WHERE id = '" . $id . "'";
+                            $sql = "UPDATE `students` SET `first_name` = '" . $firstName . "', `last_name` = '" . $lastName . "', `mobile` = '" . $mobile . "', `email` = '" . $email . "', `branch` = '" . $branch . "', `is_hostel_opted` = '" . $hostelFacility . "', `address` = '" . $address . "',  WHERE id = '" . $id . "'";
 
                             if ($conn->query($sql) === TRUE) {
                                 header("Location: index.php");
@@ -241,31 +241,7 @@ if ($conn->connect_error) {
                             </label>
                         </div>
                     </div>
-                    <div class="row-container">
-                        <div class="input-container">
-                            <label>Choose Additional Subjects: </label>
-                            <label class="wrapper check-wrapper">
-                                <input type="checkbox" name="additional_subjects[]" value="Cyber Security" <?php echo in_array('Cyber Security', $additionalSubjects) ? 'checked' : ''; ?> />
-                                Cyber Security
-                            </label>
-                            <label class="wrapper check-wrapper">
-                                <input type="checkbox" name="additional_subjects[]" value="Artificial Intelligence" <?php echo in_array('Artificial Intelligence', $additionalSubjects) ? 'checked' : ''; ?> />
-                                Artificial Intelligence
-                            </label>
-                            <label class="wrapper check-wrapper">
-                                <input type="checkbox" name="additional_subjects[]" value="Blockchain" <?php echo in_array('Blockchain', $additionalSubjects) ? 'checked' : ''; ?> />
-                                Blockchain
-                            </label>
-                            <label class="wrapper check-wrapper">
-                                <input type="checkbox" name="additional_subjects[]" value="IoT" <?php echo in_array('IoT', $additionalSubjects) ? 'checked' : ''; ?> />
-                                IoT
-                            </label>
-                            <label class="wrapper check-wrapper">
-                                <input type="checkbox" name="additional_subjects[]" value="Robotics" <?php echo in_array('Robotics', $additionalSubjects) ? 'checked' : ''; ?> />
-                                Robotics
-                            </label>
-                        </div>
-                    </div>
+
                     <div class="row-container">
                         <div class="input-container">
                             <label for="address">

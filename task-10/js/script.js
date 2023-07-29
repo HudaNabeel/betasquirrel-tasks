@@ -8,9 +8,9 @@
  // console.log(typeof lastname)
  // lastname = 'Doe'
  // console.log(typeof lastname)
- // lastname = '123'
- //console.log(typeof lastname)
- // const age = 50 // number
+// lastname = '123'
+// console.log(typeof lastname)
+ //const age = 50 // number
 
 
  // document -DOM

@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task 9</title>
+    <title>task 10</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -127,12 +127,7 @@ if ($conn->connect_error) {
                         <p><?php echo $hostelFacility == 1 ? 'Yes' : 'No'; ?></p>
                     </div>
                 </div>
-                <div class="row-container">
-                    <div class="input-container">
-                        <label>Additional Subjects Opted: </label>
-                        <p><?php echo join(', ', $additionalSubjects); ?></p>
-                    </div>
-                </div>
+
                 <div class="row-container">
                     <div class="input-container">
                         <label for="address">

@@ -46,7 +46,7 @@ require('head.php');
         </div>
 
         <div class="table-container">
-            <table class="List-table">
+            <table border="1" cellspacing="1" class="List-table">
                 <tr>
                     <th>R. No</th>
                     <th>Full Name</th>
