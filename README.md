@@ -169,3 +169,8 @@ https://www.apachefriends.org/download.html
 If any problem , sure ChatGPT contact and it will solve the problem
 
 https://chat.openai.com
+
+
+# Laravel Installation 
+
+https://laravel.com/docs/10.x/installation
