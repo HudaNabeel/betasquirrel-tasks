@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>studentform Registration | Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+          Oneschool
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#profileCollapse" aria-controls="profileCollapse" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- dropdown -->
+        <div class="collapse navbar-collapse justify-content-end" id="profileCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="userdropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">
+                Huda Nabeel
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="userdropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Profile</a>
+                </li>
+                <li>
+                <hr class="dropdown-divider">
+              </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   
+        <!-- sidebar -->
+    <div class="d-flex">
+     <nav id="sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="bi bi-house-door"></i>
+              <span class="d-done d-md-inline">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person"></i>
+              <span class="d-done d-md-inline">Students</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-people"></i>
+              <span class="d-done d-md-inline">Staff</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-currency-dollar"></i>
+              <span class="d-done d-md-inline">Accounts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-box"></i>
+              <span class="d-done d-md-inline">Inventory</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-book"></i>
+              <span class="d-done d-md-inline">Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+     </nav>
+
+      <!-- main -->
+   <div class="container-fluid main-content">
+    <div class="row">
+        <div class="col mt-3">
+            <h2 class="mb-3"> Add Student</h2>
+            <hr />
+
+            <!--firstname-->
+            <div class="row">
+              <div class="col">
+               <form>
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="firstName" class="form-label">First Name</label>
+<input type="text" id="firstName" class="form-control" name="firstName" required />
+                  </div>
+                  <!--lastname-->
+                  <div class="col">
+                    <label for="lastName" class="form-label">Last Name</label>
+<input type="text" id="lastName" class="form-control" name="lastName" required />
+                  </div>
+                </div>
+                <!--mobile-->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="mobile" class="form-label">Mobile</label>
+                    <input type="tel" id="mobile" class="form-control" name="mobile" required />
+                  </div>
+                    <!--email-->
+                                  <div class="col">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" name="email" required />
+                  </div>
+                </div>
+                  <!--address-->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="address" class="form-label">Address</label>
+  <textarea class="form-control" id="address" rows="4" name="address" required></textarea>
+                  </div>
+                </div>
+                  <!--education-->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="education" class="form-label">Education</label>
+                    <select class="form-select" name="education" required>
+                      <option selected>Open this select menu</option>
+                      <option value="" disabled selected>Select Education</option>
+                      <option value="bachlor's">Bachlor's</option>
+                      <option value="master's">Master's</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                  <label  class="form-label">Is Degree Completed</label>
+                    </div>
+                    <div>
+                     
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="degreeCompleted" id="degreeYes" value="yes">
+                        <label class="form-check-label" for="degreeYes">
+                          Yes
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="degreeCompleted" id="degreeNo" value="no">
+                      <label class="form-check-label" for="degreeNo">
+                        No
+                      </label>
+                  </div>
+
+                  </div>
+                </div>
+                  <!--skills-->
+                <div class="row mb-3">
+                  <div class="col">
+                   <div>
+                    <label  class="form-label">Skills</label>
+                   </div>
+                   <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="HTML" id="skillHTML" name="skills []">
+                    <label class="form-check-label" for="skillHTML">
+                     HTML
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="CSS" id="skillCss" name="skills []">
+                    <label class="form-check-label" for="skillCss">
+                    CSS
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="javascript" id="skilljavascript" name="skills []">
+                    <label class="form-check-label" for="skilljavascript">
+                     JavaScript
+                    </label>
+                  </div>
+                </div>
+                  <!--save,reset-->
+                <div class="row">
+                  <div class="col text-end">
+                    <button type="reset" class="btn btn-secondary mb-3 mx-3">Reset</button>
+                    <button type="save" class="btn btn-primary mb-3">Save</button>
+                  </div>
+
+                </div>
+
+
+               </form>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
