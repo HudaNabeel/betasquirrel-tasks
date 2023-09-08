@@ -1,0 +1,35 @@
+:root {
+  --light-text-color: #ffffff;
+  --dark-bg-color: #333333;
+  --space: 15px;
+  --link-hover: pink;
+}
+
+.Sidebar {
+  background-color: var(--dark-bg-color);
+  width: 200px;
+  height: calc(100vh - 56px);
+}
+.Sidebar a {
+  color: var(--light-text-color);
+}
+.Sidebar a.active {
+  text-decoration: underline;
+}
+.Sidebar a:hover {
+  color: var(--link-hover);
+}
+.Sidebar .nav-link span {
+  padding-left: var(--space);
+}
+.Sidebar .nav-link svg {
+  width: 30px;
+}
+.navbar-brand img {
+  margin-right: var(--space);
+}
+@media (max-width: 767px) {
+  .Sidebar {
+    width: 50px;
+  }
+}
