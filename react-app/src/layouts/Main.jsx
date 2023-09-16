@@ -1,5 +1,6 @@
 import Sidebar from "../components/Sidebar";
 import AppNavbar from "../components/AppNavbar";
+import { Container} from "react-bootstrap";
 
 
 
@@ -11,7 +12,9 @@ function Main ({ children }) {
         <AppNavbar />
         <div className="d-flex">
             <Sidebar />
-            <div className="container-fluid">{children}</div>
+            <Container fluid> {children}</Container>
+            
+            
         </div>
         </>
     );

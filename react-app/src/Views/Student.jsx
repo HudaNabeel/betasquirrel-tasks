@@ -1,87 +1,96 @@
+import React,  { useState } from 'react';
 import Main from '../layouts/Main';
-import { Table } from 'react-bootstrap';
+import { Table, Row, Col, Button,Modal, Form } from 'react-bootstrap';
+import { useEffect } from 'react';
+import StudentForm from './Student/StudentForm';
+
+
 
 const Student = () => {
-    return (
+
+    const [Students, setStudents] = useState([ ]) ;
+  const [show, setShow] = useState(false);
+  
+
+  useEffect(() => {
+    fetch("http://localhost:4000/student")
+    .then((res) => res.json())
+    .then((data) => setStudents(data.data))
+    .catch((err) => console.log(err));
+  }, []);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+                  
+
+        setTimeout (() => {
+        setStudents ([
+          { name: "Jack", mobile: "110839", email: "jack@gmail.com", address: "st.Thomas", education: "Bachlors", skills: "HTML, CSS, JavaScript" },
+           { name: "Elison", mobile: "112839", email: "elison@gmail.com",  address: "London", education: "Masters", skills: " JavaScript,vue.js"},
+           { name: "J.K",  mobile: "113839", email: "rowling@gmail.com" ,  address: "UK city", education: "Bachlors", skills: " Php,Laravel,wordpress"},
+           { name: "Emilie", mobile: "114839", email: "emilie@gmail.com" ,  address: "Lavendar", education: "Masters", skills: " Python,Mongo DB"},
+           { name: "Austin",  mobile: "115839",email: "austin@gmail.com",  address: "US", education: "Masters", skills: "HTML, CSS, JavaScript,Php,Vue.js,Mysql"},
+        ]);
+       } , 5000 )
+
+  console.log (Students);
+  return (
         <>
        <Main>
+         <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Add Student</Modal.Title>
+        </Modal.Header>
+              <StudentForm  onClose={handleClose}/>        
+      </Modal>
+      
         <div className="row mt-3">
             <h2>Students</h2>
-            <Table striped bordered hover>
+            <Row>
+              <Col className='mb-3 text-end' >
+              <Button variant="success" size='sm' onClick={handleShow}>
+               +Add Student</Button>
+              </Col>
+            </Row>
+            <Table striped bordered hover responsive>
       <thead>
         <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
+          <th className='text-center'>#</th>
+          <th> Name</th>
           <th>Mobile</th>
           <th>Email</th>
           <th>Address</th>
-                    <th>Is Degree Completed</th>
                     <th> Education</th>
                     <th>Skills</th>
         </tr>
       </thead>
       <tbody>
-      <tr>
-      <td>1</td>
-                    <td>Jack</td>
-                    <td>Daniel</td>
-                    <td>110839</td>
-                    <td>jack@gmail.com</td>
-                    <td>st.Thomas</td>
-                    <td>Bachlor's</td>
-                    <td>Yes</td>
-                 <td>HTML, CSS, JavaScript</td>
-                  </tr>
-                  <tr>
-                  <td>2</td>
-                    <td>Elison</td>
-                    <td>Martin</td>
-                    <td>112839</td>
-                    <td>elison@gmail.com</td>
-                    <td>London</td>
-                    <td>Master's</td>
-                    <td>Yes</td>
-                 <td>HTML, CSS, JavaScript,PHP, Reactjs</td>
-                  </tr>
-                  <tr>
-                  <td>3</td>
-                  <td> J.K. </td>
-                    <td>  Rowling</td>
-                    <td>113839</td>
-                    <td>rowling@gmail.com</td>
-                    <td>UK city</td>
-                    <td>Master's</td>
-                    <td>Yes</td>
-                 <td>HTML, CSS, JavaScript,PHP, </td>
-                  </tr>
-                  <tr>
-                  <td>4</td>
-                  <td>Emilie</td>
-                    <td>Durkhim</td>
-                    <td>114839</td>
-                    <td>emilie@gmail.com</td>
-                    <td>Lavendar</td>
-                    <td>Master's</td>
-                    <td>Yes</td>
-                 <td>HTML, CSS, JavaScript,PHP, </td>
-                  </tr>
-                  <tr>
-                  <td>5</td>
-                  <td>Austin</td>
-                    <td>Lark</td>
-                    <td>115839</td>
-                    <td>austin@gmail.com</td>
-                    <td>US</td>
-                    <td>Master's</td>
-                    <td>Yes</td>
-                 <td>HTML, CSS, JavaScript,PHP,</td>
-                  </tr>
+       
+          {
+            Students.length === 0 ?(
+              <tr><td colSpan={7} className='text-center'>No records found!</td></tr>
+            ) : (
+              Students.map((student,index) => (
+                <tr key={index}> 
+                  <td className='text-center'>{index + 1}</td>
+                        <td>{student.name}</td>
+                        <td>{student.mobile}</td>
+                        <td>{student.email}</td>
+                        <td>{student.address}</td>
+                        <td>{student.education}</td>
+                     <td>{student.skills}</td>
+                      </tr>
+              ))
+              )  } 
+     
+      
+                 
                   
       </tbody>
     </Table>
         </div>
        </Main>
+      
 
         </>
     );
