@@ -51,6 +51,8 @@ div {
 
 .left img {
   height: 60px;
+  border-radius: 50%;
+  padding: 5px;
 }
 .left h2 {
   display: inline;
@@ -76,4 +78,20 @@ div {
 .right a:active {
   background-color: pink;
   color: orangered;
+}
+@media only screen and (max-width: 750px) {
+  #navbar {
+    width: 100%;
+    padding: 10px;
+  }
+  #main-container {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .boxes {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+  }
 }
