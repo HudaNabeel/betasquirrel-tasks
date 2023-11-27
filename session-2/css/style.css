@@ -66,7 +66,7 @@ body {
   height: 100%;
 }
 @media only screen and (max-width: 750px) {
-  a {
+  #menue-container {
     display: none;
   }
   #navbar {

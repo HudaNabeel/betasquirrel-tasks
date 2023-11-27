@@ -80,7 +80,7 @@ div {
   color: orangered;
 }
 @media only screen and (max-width: 750px) {
-  a {
+  .right a {
     display: none;
   }
   #navbar {
@@ -96,5 +96,6 @@ div {
     height: auto;
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
   }
 }
