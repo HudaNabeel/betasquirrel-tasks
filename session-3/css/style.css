@@ -223,7 +223,7 @@ body {
 
   #container {
     height: auto;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 100px);
   }
   #sidebar {
     height: auto;
