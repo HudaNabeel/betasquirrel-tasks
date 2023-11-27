@@ -223,7 +223,7 @@ body {
 
   #container {
     height: auto;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 250px);
   }
   #sidebar {
     height: auto;
@@ -233,35 +233,14 @@ body {
     position: relative;
     display: block;
   }
-  .chart div {
-    bottom: 0;
+  .circle,
+  .chart {
+    height: calc((100vw - 200px) / 4);
+    width: calc((100%) / 4);
   }
-  .one {
-    left: 0;
-    height: calc(100% - 30px);
-  }
-  .two {
-    left: 40px;
-    height: calc(100% - 150px);
-  }
-  .three {
-    left: 90px;
-    height: calc(100% - 120px);
-  }
-  .four {
-    left: 135px;
-    height: calc(100% - 200px);
-  }
-  .five {
-    left: 180px;
-    height: calc(100% - 40px);
-  }
-  .six {
-    left: 225px;
-    height: calc(100% - 280px);
-  }
-  .line {
-    width: 100%;
-    height: 15px;
+  .tile,
+  .circle,
+  .chart {
+    float: left;
   }
 }
