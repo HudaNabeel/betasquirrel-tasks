@@ -24,6 +24,7 @@ body {
 #logo-container h2 {
   display: inline-block;
   color: white;
+  margin-left: 15px;
 }
 #profile-container {
   width: auto;
@@ -211,36 +212,16 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
   #navbar {
-    height: auto;
-    width: 100%;
+    height: 60px;
   }
-  #main {
+  .main {
     height: auto;
-    width: 100%;
-  }
-
-  #container {
-    height: auto;
-    width: calc(100vw - 250px);
   }
   #sidebar {
     height: auto;
     width: 100%;
-  }
-  .chart {
-    position: relative;
-    display: block;
-  }
-  .circle,
-  .chart {
-    height: calc((100vw - 200px) / 4);
-    width: calc((100%) / 4);
-  }
-  .tile,
-  .circle,
-  .chart {
     float: left;
   }
 }
